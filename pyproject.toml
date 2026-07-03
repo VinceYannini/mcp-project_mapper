@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-folder-mapper"
+version = "0.1.0"
+description = "Un servidor MCP que proporciona herramientas seguras para mapear directorios locales para agentes de IA."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+mcp-folder-mapper = "mcp_folder_mapper.server:main"
